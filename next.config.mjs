@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
+export default {
+    webpack: (config) => {
+        config.module.rules.push({
+            test: /\.worker\.js$/,
+            use: { loader: 'worker-loader' },
+        });
+        return config;
+    },
+};
