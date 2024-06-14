@@ -5,7 +5,6 @@ import cognizant from "@/assets/cognizant.jpeg";
 import maybank from "@/assets/maybank.jpeg";
 import Link from 'next/link';
 
-
 const Experience = () => {
     const experiences = [
         {
@@ -36,52 +35,35 @@ const Experience = () => {
             redirect: 'https://www.accellor.com'
         }
     ];
+
     const goToCompanyProfile = (exp: string | URL | undefined) => {
-        window.open(exp)
-    }
+        window.open(exp);
+    };
+
     return (
-        <div className="text-black p-10 ml-5 text-xl">
-            <h2 className="text-2xl font-bold text-gray-900">EXPERIENCE <span className="text-red-500">SUMMARY</span></h2>
-            <div style={{ borderLeft: "dotted", borderRight: "none", borderBottom: "none", borderTop: "none" }} >
-                <div className="space-y-6 mt-8" style={{ marginLeft: "-17px" }}>
-                    {experiences.map((exp, index) => <div className="flex space-x-4 items-start" key={index}>
-                        <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
-                            {index + 1}
+        <div className="text-black p-4 md:p-10 ml-2 md:ml-5 text-base md:text-xl">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900">EXPERIENCE <span className="text-red-500">SUMMARY</span></h2>
+            <div className="border-l-4 border-dotted border-gray-300 mt-6">
+                <div className="space-y-6 mt-8 -ml-4 md:-ml-4">
+                    {experiences.map((exp, index) => (
+                        <div className="flex space-x-4 items-start" key={index}>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                                {index + 1}
+                            </div>
+                            <div>
+                                <h3 className="text-lg md:text-xl font-semibold text-gray-900">{exp.position}</h3>
+                                <Link className="flex items-center text-gray-700 hover:underline" style={{ color: exp.textColor }} href="#" onClick={() => goToCompanyProfile(exp.redirect)}>
+                                    <Image className="w-full" src={exp.image} alt={`${exp.company} Logo`} width={50} height={50} style={exp.styleText} />
+                                    <span className="ml-2">{exp.company}</span>
+                                </Link>
+                                <p className="text-gray-500">{exp.duration}</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 className="text-xl font-semibold text-gray-900">{exp.position}</h3>
-                            <Link className="flex text-gray-700" style={{ color: exp.textColor }} href="" onClick={() => goToCompanyProfile(exp.redirect)}>
-                                <Image className="w-full" src={exp.image} alt="Siva Image" style={exp.styleText} />
-                                {exp.company}
-                            </Link>
-                            <p className="text-gray-500">{exp.duration}</p>
-                        </div>
-                    </div>)}
+                    ))}
                 </div>
             </div>
         </div>
     );
-
-    // <div className='text-black p-10 ml-5 text-xl'>
-    //     <h1 className='text-4xl custom-border-bottom'>EXPERIENCE <span className='text-red-500'>SUMMARY</span></h1>
-    //     <ul>
-    //         {experiences.map((item, index) =>
-    //             <li key={index} className='m-6'>
-    //                 <div className='flex'>
-    //                     <div>{index + 1}</div> <div>{item.position}</div>
-    //                 </div>
-    //                 <div >
-    //                     {item.company}
-    //                 </div>
-    //                 <div >
-    //                     {item.duration}
-    //                 </div>
-    //             </li>
-    //         )
-    //         }
-    //     </ul>
-    // </div>
-    // );
 };
 
 export default Experience;

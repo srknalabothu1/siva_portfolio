@@ -10,25 +10,23 @@ const ReachMeOut = () => {
     ];
 
     const takeMeThere = (link: string | URL | undefined) => {
-        // Implement your logic for navigation or any action
         window.open(link, "_blank");
     };
 
     return (
-        <div className='text-black p-10 ml-5 text-xl'>
-            <h2 className="text-2xl font-bold text-gray-900">Reach me <span className="text-red-500">Out</span></h2>
-            <div className='text-customBlue space-y-6 mt-8'>
+        <div className='text-black p-4 md:p-10 ml-2 md:ml-5 text-base md:text-xl'>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900">Reach me <span className="text-red-500">Out</span></h2>
+            <div className='space-y-6 mt-8'>
                 {experience.map((item, index) =>
-                    <Link key={index} className='flex space-x-4 items-start' href='' onClick={() => takeMeThere(item.link)}>
-                        <div className='m-2.5 text' style={{ color: index === 1 ? "#e65e5e" : "" }}>
+                    <Link key={index} className='flex items-center space-x-4' href='#' onClick={() => takeMeThere(item.link)}>
+                        <div className='text-lg md:text-xl' style={{ color: index === 1 ? "#e65e5e" : "#0077B5" }}>
                             {item.position}
                         </div>
-                        <div className='text-4xl' style={{ marginLeft: index === 1 ? "33px" : "" }}>
-                            <FontAwesomeIcon icon={item.icon} color={index === 1 ? 'black' : ''} />
+                        <div className='text-3xl md:text-4xl'>
+                            <FontAwesomeIcon icon={item.icon} color={index === 1 ? 'black' : '#0077B5'} />
                         </div>
                     </Link>
-                )
-                }
+                )}
             </div>
         </div>
     );
