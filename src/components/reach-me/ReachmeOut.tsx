@@ -23,7 +23,7 @@ const ReachMeOut = () => {
                             {item.position}
                         </div>
                         <div className='text-3xl md:text-4xl'>
-                            <FontAwesomeIcon icon={item.icon} color={index === 1 ? 'black' : '#0077B5'} />
+                            <FontAwesomeIcon icon={item.icon as any} color={index === 1 ? 'black' : '#0077B5'} />
                         </div>
                     </Link>
                 )}
