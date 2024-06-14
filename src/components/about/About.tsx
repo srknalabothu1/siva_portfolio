@@ -18,7 +18,7 @@ const About = () => {
                 <div className="px-6 py-4">
                     <div className="text-base">
                         <b>Siva Ramakrishna</b><br />
-                        <div className='text-gray-400 text-sm'>Software Engineer |<br /> Full-Stack Developer |<br /> MERN Stack | PERN Stack | DevOps
+                        <div className='text-gray-400 text-sm'>Sr.Software Engineer |<br /> Full-Stack Developer |<br /> MERN Stack | PERN Stack | DevOps
                         </div>
                     </div>
                 </div>
