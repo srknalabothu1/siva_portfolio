@@ -26,7 +26,7 @@ const About = () => {
             <div className="m-6">
                 <h1 className='text-2xl'><b>Hello there!! 👋 </b></h1> <br />
                 <h2 className='text-1.75em'>I'm Siva Ramakrishna, nice to meet you. Please take a look around!</h2><br />
-                <h5 className='text-base'>I am passionate about building excellent software that improves the lives of those around me. I specialize in building applications specific to the business needs of my clients. I am experienced in software development, mobile app creation, front-end/back-end web, database/server management development. I have around 6+ years of experience of building and maintaining Websites, Mobile Applications.I love Javascript, Node, React, Redux, Html, CSS, Bootstrap.</h5>
+                <h5 className='text-base'>I am dedicated to creating exceptional software that enhances the lives of users. My expertise lies in developing applications tailored to the specific needs of businesses. With over six years of experience in software development, mobile app creation, and front-end/back-end web development, I am proficient in database and server management. I have a strong passion for JavaScript, Node.js, React, Redux, HTML, CSS, and Bootstrap.</h5>
                 <div className='pt-[5rem] pl-[33rem]'><button className='p-2.5 leading-4 m-4 border-2 border-white rounded-3xl' onClick={onResumeOpen}>View resume</button></div>
             </div>
         </div>
