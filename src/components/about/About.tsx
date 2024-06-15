@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const About = () => {
     const onResumeOpen = () => {
-        window.open('http://localhost:3000/pdf/Siva_resume.pdf', "_blank");
+        window.open(`${process.env.NEXT_PUBLIC_API_URL}/pdf/Siva_resume.pdf`, "_blank");
     }
     return (
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start w-full p-4 bg-black text-white">
