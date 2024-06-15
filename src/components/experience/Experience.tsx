@@ -11,16 +11,16 @@ const Experience = () => {
             position: "Senior Software Engineer",
             company: "Maybank",
             duration: "December 2022 - Present",
-            textColor: "#5aff00",
+            textColor: "#ffc107",
             image: maybank,
-            styleText: { width: "2%", height: "2%", margin: "1%" },
+            styleText: { width: "5%", height: "5%", margin: "1%" },
             redirect: 'https://www.maybank.com/en/index.page'
         },
         {
             position: "Software Engineer",
             company: "Cognizant",
             duration: "August 2021 - December 2022",
-            textColor: "#0000ff",
+            textColor: "#000048",
             image: cognizant,
             styleText: { width: "9%", height: "9%" },
             redirect: 'https://careers.cognizant.com/global-en/'
