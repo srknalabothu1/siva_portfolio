@@ -12,7 +12,7 @@ const Experience = () => {
             position: "Data Engineer",
             company: "FWD Technologies And Innovations Malaysia Sdn. Bhd.",
             duration: "April 2024 - Present",
-            textColor: "#ffc107",
+            textColor: "black",
             image: fwd,
             styleText: { width: "5%", height: "5%", margin: "1%" },
             redirect: 'https://www.fwd.com.my/careers/'
@@ -21,7 +21,7 @@ const Experience = () => {
             position: "Project Engineer",
             company: "Wipro Technologies",
             duration: "April 2022 - January 2024",
-            textColor: "#000048",
+            textColor: "black",
             image: wipro,
             styleText: { width: "9%", height: "9%" },
             redirect: 'https://www.wipro.com/'
@@ -30,7 +30,7 @@ const Experience = () => {
             position: "Consultant Wipro",
             company: "Maneva Consulting Pvt Ltd",
             duration: "February 2022 - April 2023",
-            textColor: "#ff6347",
+            textColor: "black",
             image: maneva,
             styleText: { width: "10%" },
             redirect: 'https://manevaconsulting.com/'
@@ -39,7 +39,7 @@ const Experience = () => {
             position: "Engineer",
             company: "For U Kids Retail Pvt Ltd",
             duration: "January 2019 - February 2022",
-            textColor: "#ff6347",
+            textColor: "black",
             image: forUKids,
             styleText: { width: "10%" },
             redirect: 'http://www.blubudhealthcare.co.in/'
