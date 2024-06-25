@@ -5,8 +5,7 @@ import Link from 'next/link';
 
 const ReachMeOut = () => {
     const experience = [
-        { position: 'LinkedIn', icon: faLinkedin, link: 'https://www.linkedin.com/in/siva-krishna-4958ba289/' },
-        { position: 'GitHub', icon: faGithub, link: 'https://github.com/srknalabothu1' }
+        { position: 'LinkedIn', icon: faLinkedin, link: 'https://www.linkedin.com/in/suresh-mungara-695bb6152?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' }
     ];
 
     const takeMeThere = (link: string | URL | undefined) => {

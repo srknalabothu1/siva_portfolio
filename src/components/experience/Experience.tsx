@@ -1,38 +1,48 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
-import accellor from "@/assets/accellor.jpeg";
-import cognizant from "@/assets/cognizant.jpeg";
-import maybank from "@/assets/maybank.jpeg";
+import maneva from "@/assets/maneva.jpeg";
+import wipro from "@/assets/wipro.jpeg";
+import fwd from "@/assets/fwd.jpeg";
+import forUKids from "@/assets/forUKids.jpeg";
 import Link from 'next/link';
 
 const Experience = () => {
     const experiences = [
         {
-            position: "Senior Software Engineer",
-            company: "Maybank",
-            duration: "December 2022 - Present",
+            position: "Data Engineer",
+            company: "FWD Technologies And Innovations Malaysia Sdn. Bhd.",
+            duration: "April 2024 - Present",
             textColor: "#ffc107",
-            image: maybank,
+            image: fwd,
             styleText: { width: "5%", height: "5%", margin: "1%" },
-            redirect: 'https://www.maybank.com/en/index.page'
+            redirect: 'https://www.fwd.com.my/careers/'
         },
         {
-            position: "Software Engineer",
-            company: "Cognizant",
-            duration: "August 2021 - December 2022",
+            position: "Project Engineer",
+            company: "Wipro Technologies",
+            duration: "April 2022 - January 2024",
             textColor: "#000048",
-            image: cognizant,
+            image: wipro,
             styleText: { width: "9%", height: "9%" },
-            redirect: 'https://careers.cognizant.com/global-en/'
+            redirect: 'https://www.wipro.com/'
         },
         {
-            position: "Software Engineer",
-            company: "PopcornApps (Accellor)",
-            duration: "October 2019 - June 2021",
+            position: "Consultant Wipro",
+            company: "Maneva Consulting Pvt Ltd",
+            duration: "February 2022 - April 2023",
             textColor: "#ff6347",
-            image: accellor,
+            image: maneva,
             styleText: { width: "10%" },
-            redirect: 'https://www.accellor.com'
+            redirect: 'https://manevaconsulting.com/'
+        },
+        {
+            position: "Engineer",
+            company: "For U Kids Retail Pvt Ltd",
+            duration: "January 2019 - February 2022",
+            textColor: "#ff6347",
+            image: forUKids,
+            styleText: { width: "10%" },
+            redirect: 'http://www.blubudhealthcare.co.in/'
         }
     ];
 
